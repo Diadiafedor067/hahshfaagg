@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.main-menu {
+  height: 70px;
+  width: 100%;
+  background-color: #12161a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0
+}
+
+.main-menu .main-menu-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  list-style: none;
+  margin: 0
+}
+
+.main-menu .menu-button {
+  display: block;
+  width: 50px
+}
+
+.main-menu .menu-button-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative
+}
+
+.main-menu .menu-button-section img {
+  height: 22px
+}
+
+.main-menu .menu-button-section svg {
+  height: 22px;
+  overflow: visible
+}
+
+.main-menu .menu-button-section svg path {
+  height: 19px
+}
+
+.main-menu .menu-button-section .menu-span {
+  margin-top: 6px;
+  font-weight: 900;
+  font-size: 10px;
+  color: rgba(93, 114, 159, 1);
+  text-transform: uppercase;
+}
+
+.main-menu .menu-button-section .menu-span.active {
+  color: #fff;
+}
+
+.main-menu .menu-button-section .menu-span.active-special {
+  color: #3a9aff
+}
+
+.special-button-light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 15px #3a9fff99;
+}
+
+.menu-badge {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background-color: #0098eb;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none
+}
+
